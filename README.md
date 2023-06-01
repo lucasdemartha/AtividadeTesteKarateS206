@@ -27,6 +27,7 @@ Para executar o projeto basta realizar a cópia do repositório para sua máquin
 Já o relatório HTML é gerado automaticamente após a execução dos testes, basta abrir o link gerado no prompt.
 
 Ex2:
+
 1.Quantas suítes de testes você desenvolveu?
 R.: Uma suíte de testes com 6 casos de testes.
 
