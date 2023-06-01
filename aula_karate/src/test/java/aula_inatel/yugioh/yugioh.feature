@@ -25,20 +25,20 @@ Scenario: Testando o retorno das cartas do tipo Blue-Eyes, verificando se os ele
     And match each $.data contains {name: '#string',type: '#string'}
 
 
-Scenario: Testando o retorno da carta Baby Dragon e seu poder de ataque
+Scenario: Testando o retorno da carta Baby Dragon e seu poder de ataque.
     Given url url_base
     And path '?name=Baby%20Dragon'
     When method get
     Then status 200
     And match $.data[0].atk == 1200
 
-Scenario: Testando o retorno (negativo) da carta pikachu
+Scenario: Testando o retorno (negativo) da carta pikachu.
     Given url url_base
     And path '?name=Pikachu'
     When method get
     Then status 400
 
-Scenario: Testando o retorno (negativo) das cartas do tipo veneno
+Scenario: Testando o retorno (negativo) das cartas do tipo veneno.
     Given url url_base
     And path '?archetype=veneno'
     When method get
